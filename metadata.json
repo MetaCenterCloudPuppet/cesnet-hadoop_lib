@@ -1,0 +1,58 @@
+{
+  "name": "cesnet-hadoop_lib",
+  "version": "0.1.0",
+  "author": "cesnet",
+  "summary": "Common puppet library for Hadoop modules",
+  "license": "MIT",
+  "source": "https://github.com/MetaCenterCloudPuppet/cesnet-hadoop_lib",
+  "project_page": "https://github.com/MetaCenterCloudPuppet/cesnet-hadoop_lib",
+  "issues_url": "https://github.com/MetaCenterCloudPuppet/cesnet-hadoop_lib/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "adrien/alternatives",
+      "version_requirement": ">= 0.3.0 <1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Fedora"
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    }
+  ]
+}
