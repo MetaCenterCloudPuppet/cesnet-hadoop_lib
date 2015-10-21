@@ -11,6 +11,7 @@ describe 'hadoop_lib::env' do
         context "hadoop_lib class without any parameters" do
           it { is_expected.to compile.with_all_deps }
 
+          it { is_expected.to contain_class('hadoop_lib::env') }
           it { is_expected.to contain_class('hadoop_lib::params') }
 
           it { is_expected.to contain_file('/etc/profile.d/hadoop.sh') }

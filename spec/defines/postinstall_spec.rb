@@ -11,6 +11,7 @@ describe 'hadoop_lib::postinstall', :type => :define do
 
         context "hadoop_lib::postinstall resource without any parameters" do
           it { is_expected.to compile.with_all_deps }
+          it { is_expected.to contain_hadoop_lib__postinstall('hive') }
         end
 
         if os =~ /debian.*/ or os =~ /ubuntu/ then
