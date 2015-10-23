@@ -1,6 +1,6 @@
 {
   "name": "cesnet-hadoop_lib",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "cesnet",
   "summary": "Common puppet library for Hadoop modules",
   "license": "MIT",
@@ -10,11 +10,11 @@
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 1.0.0"
+      "version_requirement": ">=1.0.0"
     },
     {
       "name": "adrien/alternatives",
-      "version_requirement": ">= 0.3.0 <1.0.0"
+      "version_requirement": ">=0.3.0 <1.0.0"
     }
   ],
   "operatingsystem_support": [
