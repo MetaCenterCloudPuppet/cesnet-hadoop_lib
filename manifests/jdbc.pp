@@ -10,9 +10,11 @@
 define hadoop_lib::jdbc(
   $db,
 ) {
+  include ::stdlib
+
   $dest = $title
 
-  case $db {
+  case getvar('db') {
     'mysql', 'mariadb': {
       file { "${dest}/mysql-connector-java.jar":
         ensure => 'link',
