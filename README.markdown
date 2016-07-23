@@ -1,3 +1,7 @@
+## Hadoop Puppet Helper Library
+
+[![Build Status](https://travis-ci.org/MetaCenterCloudPuppet/cesnet-hadoop_lib.svg?branch=master)](https://travis-ci.org/MetaCenterCloudPuppet/cesnet-hadoop\_lib) [![Puppet Forge](https://img.shields.io/puppetforge/v/cesnet/hadoop_lib.svg)](https://forge.puppetlabs.com/cesnet/hadoop\_lib)
+
 #### Table of Contents
 
 1. [Module Description - What the module does and why it is useful](#module-description)
@@ -61,7 +65,7 @@ Common puppet library for Hadoop and its addons. It manages alternatives as used
 <a name="classes"></a>
 ###Classes
 
-* [**`hadoop_lib::env`**](#class-env): Common setup steps
+* [**`hadoop_lib::env`**](#class-env): Sets environment for Hadoop
 
 <a name="resources"></a>
 ###Resources
