@@ -14,6 +14,8 @@
     * [Resource Types](#resources)
      * [hadoop\_lib::jdbc](#resource-jdbc)
      * [hadoop\_lib::postinstall](#resource-postinstall)
+    * [Functions](#functions)
+     * [array\_search](#function-array_search)
 5. [Limitations - OS compatibility, etc.](#limitations)
 6. [Development - Guide for contributing to the module](#development)
 
@@ -111,6 +113,22 @@ Values:
 
 * *mysql*, *mariadb*: MySQL/MariaDB,
 * *postgresql*: PostgreSQL
+
+<a name="functions"></a>
+###Functions
+
+* [**`array\_search`**](#function-array_search): Search a value in array
+
+<a name="function-array_search"></a>
+### array\_search
+
+Searches a value in the array and returns the index starting from 1.
+
+#### Parameters
+
+#####`array`
+
+#####`value`
 
 <a name="development"></a>
 ##Development
