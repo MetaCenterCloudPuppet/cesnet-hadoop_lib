@@ -1,6 +1,6 @@
 {
   "name": "cesnet-hadoop_lib",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "author": "cesnet",
   "summary": "Common puppet library for Hadoop modules",
   "license": "MIT",
@@ -31,7 +31,9 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "7"
+        "7",
+        "8",
+        "9"
       ]
     },
     {
@@ -51,7 +53,8 @@
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "14.04"
+        "14.04",
+        "16.04"
       ]
     }
   ]
