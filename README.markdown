@@ -22,7 +22,7 @@
 <a name="module-description"></a>
 ## Module Description
 
-Common puppet library for Hadoop and its addons. It manages alternatives as used in Cloudera and provides necessary environment variables.
+Common puppet library for Hadoop and its addons. It manages alternatives as used in BigTop-based Hadoop distributions and provides necessary environment variables.
 
 <a name="setup"></a>
 ## Setup
@@ -62,6 +62,10 @@ Common puppet library for Hadoop and its addons. It manages alternatives as used
       db => 'mysql',
     }
 
+**Example**: array search function
+
+    $_myid = array_search($hostnames, $::fqdn)
+
 <a name="reference"></a>
 ## Reference
 <a name="classes"></a>
@@ -69,18 +73,18 @@ Common puppet library for Hadoop and its addons. It manages alternatives as used
 
 * [**`hadoop_lib::env`**](#class-env): Sets environment for Hadoop
 
-<a name="resources"></a>
-###Resources
-
-* [**`hadoop_lib::postinstall`**](#resource-postinstall): Post-installation steps
-* [**`hadoop_lib::jdbc`**](#resource-jdbc): Link JDBC jar file from standard location
-
 <a name="class-env"></a>
 ### hadoop\_lib::env
 
 #### Parameters
 
 (none)
+
+<a name="resources"></a>
+###Resources
+
+* [**`hadoop_lib::postinstall`**](#resource-postinstall): Post-installation steps
+* [**`hadoop_lib::jdbc`**](#resource-jdbc): Link JDBC jar file from standard location
 
 <a name="resource-postinstall"></a>
 ### hadoop\_lib::postinstall
@@ -117,7 +121,7 @@ Values:
 <a name="functions"></a>
 ###Functions
 
-* [**`array\_search`**](#function-array_search): Search a value in array
+* [**`array_search`**](#function-array_search): Search a value in array
 
 <a name="function-array_search"></a>
 ### array\_search
