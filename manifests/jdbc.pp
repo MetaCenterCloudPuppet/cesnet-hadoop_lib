@@ -15,7 +15,14 @@ define hadoop_lib::jdbc(
   $dest = $title
 
   case getvar('db') {
-    'mysql', 'mariadb': {
+    'mariadb': {
+      file { "${dest}/mariadb-java-client.jar":
+        ensure => 'link',
+        links  => 'follow',
+        source => '/usr/share/java/mariadb-java-client.jar',
+      }
+    }
+    'mysql': {
       file { "${dest}/mysql-connector-java.jar":
         ensure => 'link',
         links  => 'follow',
